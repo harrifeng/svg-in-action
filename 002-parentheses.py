@@ -6,7 +6,7 @@ print g
 
 del_nodes = [5, 6]
 
-g.vs['size'] = ['80']
+g.vs['size'] = ['60']
 g.vs['color'] = get_color_arr(N)
 g.vs['label'] = range(31)
 g.vs['label_size'] = ['20']
