@@ -1,0 +1,12 @@
+Printable <|-- PrintClass
+
+interface Printable {
+    {method} {abstract} print
+    {method} {abstract} newPage
+}
+
+
+class PrintClass {
+    {method} print
+    {method} newPage
+}
