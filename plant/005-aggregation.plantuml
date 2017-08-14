@@ -1,0 +1,10 @@
+Color --o Fruit
+Fruit --o Basket
+
+class Fruit {
+      color
+}
+
+class Basket {
+      fruits
+}
