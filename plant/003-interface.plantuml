@@ -1,4 +1,4 @@
-Printable <|-- PrintClass
+Printable <|.. PrintClass
 
 interface Printable {
     {method} {abstract} print
