@@ -1,5 +1,5 @@
-Color --o Fruit
-Fruit --o Basket
+Color <--o Fruit
+Fruit <--o Basket
 
 class Fruit {
       color
