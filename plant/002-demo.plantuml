@@ -1,0 +1,14 @@
+ParentClass <|-- ChildClass
+
+class ParentClass {
+    {field} field1
+    {static} field2
+    {method} {abstract} methodA
+    {method} methodB
+}
+
+
+class ChildClass {
+    {method} methodA
+    {method} {static} methodC
+}
