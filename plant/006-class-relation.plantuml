@@ -1,0 +1,25 @@
+Client --> Target : Drives >
+
+class Client {
+}
+
+class Target {
+}
+
+
+Factory --> Product : Creates >
+
+class Factory {
+}
+
+class Product {
+}
+
+
+Subject --> Observer : notifies >
+
+class Subject {
+}
+
+class Observer {
+}
