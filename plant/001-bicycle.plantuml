@@ -1,0 +1,2 @@
+Bicycle <|-- MountainBike
+Bicycle <|-- RoadBike
