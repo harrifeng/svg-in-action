@@ -1,6 +1,6 @@
 ParentClass <|-- ChildClass
 
-class ParentClass {
+abstract class ParentClass {
     {field} field1
     {static} field2
     {method} {abstract} methodA
