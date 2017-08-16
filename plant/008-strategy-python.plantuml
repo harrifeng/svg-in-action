@@ -4,10 +4,12 @@ class Order {
       {method} total()
       {method} due()
 }
+note left: context
 
 abstract class Promotion {
       {abstract} {method} discount()
 }
+note left: strategy
 
 class FidelityPromo extends Promotion {
       {method} discount()
@@ -20,3 +22,7 @@ class BulkItemPromo extends Promotion {
 class LargeOrderPromo extends Promotion {
       {method} discount()
 }
+
+note bottom of FidelityPromo : concrete strategy
+note bottom of BulkItemPromo : concrete strategy
+note bottom of LargeOrderPromo : concrete strategy
