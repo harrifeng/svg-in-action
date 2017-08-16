@@ -1,0 +1,22 @@
+Aggregation o--> Iterator
+ConcreteAggregation o--> ConcreteIterator
+
+together {
+         class Aggregation
+         class Iterator
+}
+
+interface Aggregation {
+{method} {abstract} iterator
+}
+
+interface Iterator {
+{method} {abstract} hasNext
+{method} {abstract} next
+}
+
+class ConcreteIterator implements Iterator {
+}
+
+class ConcreteAggregation implements Aggregation {
+}

@@ -1,0 +1,22 @@
+Order o--> Promotion
+
+class Order {
+      {method} total()
+      {method} due()
+}
+
+interface Promotion {
+      {abstract} {method} discount()
+}
+
+class FidelityPromo implements Promotion {
+      {method} discount()
+}
+
+class BulkItemPromo implements Promotion {
+      {method} discount()
+}
+
+class LargeOrderPromo implements Promotion {
+      {method} discount()
+}
