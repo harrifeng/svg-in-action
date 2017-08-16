@@ -5,18 +5,18 @@ class Order {
       {method} due()
 }
 
-interface Promotion {
+abstract class Promotion {
       {abstract} {method} discount()
 }
 
-class FidelityPromo implements Promotion {
+class FidelityPromo extends Promotion {
       {method} discount()
 }
 
-class BulkItemPromo implements Promotion {
+class BulkItemPromo extends Promotion {
       {method} discount()
 }
 
-class LargeOrderPromo implements Promotion {
+class LargeOrderPromo extends Promotion {
       {method} discount()
 }
