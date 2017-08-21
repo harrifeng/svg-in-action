@@ -1,10 +1,10 @@
 import igraph as ig
 from util import get_color_arr
 
-N = 13
+N = 40
 g = ig.Graph.Tree(N, 3)
 layout = g.layout_reingold_tilford(mode="in", root=[0])
-g.vs['size'] = ['60']
+g.vs['size'] = ['20']
 g.vs['color'] = get_color_arr(N, 3)
 
 # del_nodes = [6]
