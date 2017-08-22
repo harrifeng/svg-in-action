@@ -1,12 +1,16 @@
 import igraph as ig
 from util import get_color_arr
+exp_height = 1400
+exp_width = 600
+exp_font_size = 20
+exp_vertex_size = 50
 
 N = 40
 g = ig.Graph.Tree(N, 3)
 layout = g.layout_reingold_tilford(mode="in", root=[0])
 g.vs['color'] = get_color_arr(N, 3)
-g.vs['size'] = ['50']
-g.vs['label_size'] = ['20']
+g.vs['size'] = [exp_vertex_size]
+g.vs['label_size'] = [exp_font_size]
 
 g.vs['label'] = [''] * N
 
@@ -28,6 +32,6 @@ g.vs[36]['label'] = '321'
 g.vs[39]['label'] = '312'
 
 
-
-g.write_svg('003.svg', layout=layout, vertex_size=20)
-ig.plot(g, layout=layout, bbox=(1400, 600), margin=50)
+g.write_svg('003.svg', layout=layout, vertex_size=exp_vertex_size/2,
+            font_size=exp_font_size, width=exp_height, height=exp_width)
+ig.plot(g, layout=layout, bbox=(exp_height, exp_width), margin=50)
